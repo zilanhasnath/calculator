@@ -1,0 +1,101 @@
+body { 
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 1vw;
+}
+
+h1 {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+.calculator {
+    width: 90vw;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1.5vw;
+    border-radius: 1vw;
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.05);
+}
+
+.output {
+    background: #111;
+    color: #0f0;
+    padding: 1vw;
+    font-size: 2.5vw;
+    text-align: right;
+    border-radius: 0.8vw;
+    min-height: 5vw;
+    margin-bottom: 1.5vw;
+    overflow-x: auto;
+}
+
+.inputNum {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.inputNum button,
+.element button,
+.answer button,
+.clear button {
+    padding: 1vw;
+    font-size: 2.5vw;
+    border: none;
+    border-radius: 0.5vw;
+    background: #f5d7d7;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.inputNum button:hover,
+.element button:hover,
+.answer button:hover,
+.clear button:hover {
+    background: #bbb;
+}
+
+/* Separated styles */
+
+.element {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-bottom: 1vw;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-bottom: 1vw;
+}
+
+.clear {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-bottom: 1vw;
+}
+
+.equal {
+    background: #4caf50;
+    color: white;
+}
+
+.equal:hover {
+    background: #45a049;
+}
+
+.remove {
+    background: #f44336;
+    color: white;
+}
+
+.remove:hover {
+    background: #d32f2f;
+}
